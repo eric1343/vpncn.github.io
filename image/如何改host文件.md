@@ -5,7 +5,7 @@
 
 >有时你会发现，某些网站在国内网站无法访问，一般有三种可能：1.这个网站关闭了；2.被墙了；3.被DNS 污染了。像在国内被屏蔽的中小型网站网站就属于第 3 种，通过修改电脑和手机Hosts文件多数可以解决这个问题。但是像Google、Youtube、Facebook、Twitter等这些大网站和手机上的APP是直接ip都被墙了，这种办法就行不通了，只能找梯子翻墙访问。
 
-[![dns-wuran](dns-wuran.png)](#1%E4%BB%80%E4%B9%88%E6%98%AF-dns-%E6%B1%A1%E6%9F%93)
+[![dns-wuran](https://www.safewebcn.com/img/dns-wuran-min.png)](#1%E4%BB%80%E4%B9%88%E6%98%AF-dns-%E6%B1%A1%E6%9F%93)
 
 hosts文件可以视为一个系统本地上启用的DNS服务器，我们通过编辑它能把域名定向到正确的ip，可以解锁在国内受到DNS污染的网站服务。hosts是一个系统文件，在Windows系统下位于`C:\windows\system32\drivers\etc`，这个文件没有后缀，你可以用文字处理软件去编辑它，要注意的是它是一个系统保护的文件，所以需要用管理员权限才可以编辑。
 
@@ -21,13 +21,13 @@ Windows系统: C:\Windows\System32\drivers\etc
 
 直接把文件位置复制到文件夹地址栏，按`Enter`键就看到了。
 
-[![hosts](hosts.png)](#21-hosts文件位置)
+[![hosts](https://www.safewebcn.com/img/hosts-min.png)](#21-hosts文件位置)
 
 Android/iPhone/Mac/Linux: /etc/hosts
 
 ### 2.2 如何修改Hosts
 
-**方法一：**
+**方法一：** 这种最简单
 
 国内Windows/Mac用户可以直接下载hosts文件**解锁本文中所有VPN官网**（手机用户建议在电脑上打开本页面操作）：
 
@@ -43,23 +43,24 @@ Android/iPhone/Mac/Linux: /etc/hosts
 
 >如果还是打不开，请关闭浏览器再重新进入此页面点击下方链接进入官网。
 
+- [**获取StrongVPN最新优惠**](https://linkv.org/strongcn/)([StrongVPN中国使用提示](https://github.com/vpncn/vpncn.github.io#strongvpn%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8))
 
-1. [**获取NordVPN官网优惠**](http://linkv.org/nord)
+- [**获取NordVPN官网优惠**](https://linkv.org/nord/)
 
-2. [点击获取PureVPN官网优惠](https://linkv.org/pure)
+- [点击获取PureVPN官网优惠](https://linkv.org/pure/)
 
-3. [点击获取IVacy官网优惠](https://linkv.org/ivacy)
+- [点击获取IVacy官网优惠](https://linkv.org/ivacy/)
 
 
-**方法二：**
+**方法二：** 手动修改
 
 以Windows系统为例，打开文件夹C:\Windows\System32\drivers\etc，把 hosts文件**移动到桌面**，打开方式选择记事本。
 
-[![hosts](hosts-open.png)](#22-如何修改hosts)
+[![hosts](https://www.safewebcn.com/img/hosts-open-min.png)](#22-如何修改hosts)
 
 在末尾处添加ip地址和域名（之间加一个空格），**保存文件并重新移动回** C:\Windows\System32\drivers\etc **覆盖掉之前的Host文件**，最后打开浏览器设置，清空浏览器缓存，即可访问。
 
-[![](hosts-edit.png)](#22-如何修改hosts)
+[![](https://www.safewebcn.com/img/hosts-edit-min.png)](#22-如何修改hosts)
 
 ## 网站域名与对应 IP
 
@@ -69,36 +70,56 @@ Android/iPhone/Mac/Linux: /etc/hosts
 
 
 
-### 1.NordVPN
+### NordVPN
 
-插入这2行：
+插入这3行：
 
 `54.171.39.37 go.nordvpn.net`
 
 `54.171.39.37 nordvpn.net`
 
-`18.207.28.166 get.affiliatescn.net`
+`52.44.235.100 get.affiliatescn.net`
 
-添加完成，保存然后[**获取NordVPN官网优惠**](http://linkv.org/nord)。
+添加完成，保存然后重启浏览器，[**获取NordVPN官网优惠**](http://linkv.org/nord)。
 
-### 2.PureVPN
+### StrongVPN
 
-插入这3行：
+插入5行：
 
-`104.18.76.57 billing.purevpn.com`
+`69.16.145.224 strongvpn.com`
+
+`69.16.145.224 intranet.strongvpn.com`
+
+`69.16.145.213 links.strongvpn.com`
+
+`192.200.155.38 affiliate.strongvpn.com`
+
+`104.16.53.111 support.strongvpn.com`
+
+添加完成，保存然后重启或使用另一浏览器，点击[**获取StrongVPN最新优惠**](https://linkv.org/strongcn/)
+
+### PureVPN
+
+插入这5行：
+
+`104.16.37.8 purevpn.com`
+
+`104.18.4.178 billing.purevpn.com`
+
+`45.33.2.97 affiliates.purevpn.com`
 
 `104.16.113.39 www.purevpn.com`
 
-`104.18.193.71 my.purevpn.com`
+`104.18.0.55 my.purevpn.com`
 
-添加完成后保存，然后刷新浏览器，[点击获取PureVPN官网优惠](https://linkv.org/pure)，应该可以打开官网了。
+添加完成后保存，然后刷新浏览器，[点击获取PureVPN官网优惠](https://linkv.org/pure/)，应该可以打开官网了。
 
-### 3.IVacy
+### IVacy
 
 插入这2行：
 
 `104.18.200.99 www.ivacy.com`
 
-`104.17.69.88 billing.ivacy.com`
+`104.18.85.5 billing.ivacy.com`
 
-添加完成后保存，然后刷新浏览器，[点击获取IVacy官网优惠](https://linkv.org/ivacy)
+添加完成后保存，然后刷新浏览器，[点击获取IVacy官网优惠](https://linkv.org/ivacy/)
